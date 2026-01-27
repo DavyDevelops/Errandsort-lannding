@@ -21,7 +21,7 @@ export function ProviderLanding() {
                                 href="https://errandsorthub.errandsort.com/provider/register/"
                                 className="rounded-xl bg-amber-600 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                             >
-                                Drive with Us
+                                Apply to be a Service Provider
                             </a>
                         </div>
                     </div>

@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 export function Footer() {
   const footerLinks = {
     Company: [
-      { name: 'About Us', href: '#' },
+      { name: 'About Us', href: '/about' },
     ],
     Support: [
-      { name: 'Help Center', href: '#' },
-      { name: 'Safety', href: '#' },
-      { name: 'Terms of Service', href: '#' },
+      { name: 'Help Center', href: '/help' },
+      { name: 'Safety', href: '/safety' },
+      { name: 'Terms of Service', href: '/terms' },
     ],
     'For Vendors': [
       { name: 'Vendor Portal', href: 'https://errandsorthub.errandsort.com/vendor/login/' },
     ],
-    'For Providers': [
+    'For Service Providers': [
       { name: 'Drive with Us', href: 'https://errandsorthub.errandsort.com/provider/register/' },
     ],
   };
@@ -76,9 +76,15 @@ export function Footer() {
                 <ul className="space-y-3">
                   {links.map((link) => (
                     <li key={link.name}>
-                      <a href={link.href} className="transition-colors hover:text-emerald-500">
-                        {link.name}
-                      </a>
+                      {link.href.startsWith('http') ? (
+                        <a href={link.href} className="transition-colors hover:text-emerald-500">
+                          {link.name}
+                        </a>
+                      ) : (
+                        <Link to={link.href} className="transition-colors hover:text-emerald-500">
+                          {link.name}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

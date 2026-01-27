@@ -42,8 +42,8 @@ export function AuthRoleModal({ isOpen, onClose, mode }: AuthRoleModalProps) {
         },
         {
             id: 'provider',
-            title: 'Provider',
-            description: 'Offer services and get hired.',
+            title: 'Service Provider',
+            description: 'Offer professional services (plumbing, electrical, etc.) and get hired.',
             icon: Truck,
             color: 'bg-amber-100 text-amber-600',
             hoverBorder: 'hover:border-amber-500',

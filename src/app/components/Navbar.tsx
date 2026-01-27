@@ -16,7 +16,8 @@ export function Navbar() {
   const navLinks = [
     { name: 'For Customers', href: '/customer' },
     { name: 'For Vendors', href: '/vendor' },
-    { name: 'For Providers', href: '/provider' },
+    { name: 'For Service Providers', href: '/provider' },
+    { name: 'Errands', href: '/errands' },
   ];
 
   return (

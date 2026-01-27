@@ -5,6 +5,11 @@ import { CustomerLanding } from './pages/CustomerLanding';
 import { ProviderLanding } from './pages/ProviderLanding';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CookiePolicy } from './pages/CookiePolicy';
+import { ErrandLanding } from './pages/ErrandLanding';
+import { AboutUs } from './pages/AboutUs';
+import { HelpCenter } from './pages/HelpCenter';
+import { Safety } from './pages/Safety';
+import { TermsOfService } from './pages/TermsOfService';
 
 export default function App() {
   return (
@@ -15,6 +20,11 @@ export default function App() {
       <Route path="/provider" element={<ProviderLanding />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/cookies" element={<CookiePolicy />} />
+      <Route path="/errands" element={<ErrandLanding />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/help" element={<HelpCenter />} />
+      <Route path="/safety" element={<Safety />} />
+      <Route path="/terms" element={<TermsOfService />} />
     </Routes>
   );
 }
