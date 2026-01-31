@@ -24,8 +24,8 @@ export function AuthRoleModal({ isOpen, onClose, mode }: AuthRoleModalProps) {
             color: 'bg-blue-100 text-blue-600',
             hoverBorder: 'hover:border-blue-500',
             urls: {
-                signup: 'https://www.errandsort.com/signup',
-                login: 'https://www.errandsort.com/login',
+                signup: 'https://errandsortpadi.errandsort.com/',
+                login: 'https://errandsortpadi.errandsort.com/',
             },
         },
         {

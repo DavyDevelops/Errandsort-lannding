@@ -1,4 +1,4 @@
-import { Apple, Smartphone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -32,24 +32,9 @@ export function Footer() {
               Join thousands of satisfied users today.
             </p>
 
-            {/* App Download Buttons */}
-            <div className="mb-6 space-y-3">
-              <button className="flex w-full items-center gap-3 rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 transition-colors hover:bg-gray-700 sm:w-auto">
-                <Apple className="h-6 w-6 text-white" />
-                <div className="text-left">
-                  <div className="text-xs text-gray-400">Download on the</div>
-                  <div className="text-sm font-semibold text-white">App Store</div>
-                </div>
-              </button>
-
-              <button className="flex w-full items-center gap-3 rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 transition-colors hover:bg-gray-700 sm:w-auto">
-                <Smartphone className="h-6 w-6 text-white" />
-                <div className="text-left">
-                  <div className="text-xs text-gray-400">Get it on</div>
-                  <div className="text-sm font-semibold text-white">Google Play</div>
-                </div>
-              </button>
-            </div>
+            <p className="mb-6 text-sm text-gray-400 italic">
+              All our apps are available via Web App, Google Play Store, and App Store.
+            </p>
 
             {/* Social Links */}
             <div className="flex gap-4">

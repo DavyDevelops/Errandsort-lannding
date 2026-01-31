@@ -1,28 +1,27 @@
 import { Star } from 'lucide-react';
-import avatarSarah from '@/assets/images/avatar-sarah.png';
 
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Olumide Adebayo',
       role: 'Customer',
-      content: 'ErrandSort has completely changed how I shop. Fast delivery, great prices, and amazing customer service!',
+      content: 'ErrandSort has completely changed how I shop in Lagos. Fast delivery, great prices, and they always get my orders right!',
       rating: 5,
-      avatar: avatarSarah,
+      avatar: '👨🏾',
     },
     {
-      name: 'Michael Chen',
+      name: 'Chika Nwosu',
       role: 'Vendor',
-      content: 'My sales have tripled since joining ErrandSort. The platform is easy to use and their support team is fantastic.',
+      content: 'My sales have tripled since joining ErrandSort. The vendor dashboard is so easy to use, even for someone like me who isn\'t tech-savvy.',
       rating: 5,
-      avatar: '👨',
+      avatar: '👩🏾',
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Fatimah Bello',
       role: 'Service Provider',
-      content: 'The flexibility to work on my own schedule while earning great income is exactly what I needed. Highly recommend!',
+      content: 'I love the freedom this platform gives me. I can provide my cleaning services on my own schedule and the payments are always on time.',
       rating: 5,
-      avatar: '👩',
+      avatar: '👩🏾',
     },
   ];
 

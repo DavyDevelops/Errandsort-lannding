@@ -1,6 +1,5 @@
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import appMockup from '@/assets/images/app-showcase-mockup.png';
-import { Apple, Smartphone } from 'lucide-react';
 
 export function AppShowcase() {
   return (
@@ -18,7 +17,7 @@ export function AppShowcase() {
             <div className="relative mx-auto max-w-sm">
               <ImageWithFallback
                 src={appMockup}
-                alt="errandfront mobile app"
+                alt="ErrandSort mobile app interface"
                 className="relative z-10 w-full drop-shadow-2xl"
               />
             </div>
@@ -35,24 +34,10 @@ export function AppShowcase() {
               </p>
             </div>
 
-            {/* Download Buttons */}
-            <div className="flex flex-col gap-4 sm:flex-row lg:justify-start">
-              <button className="inline-flex items-center justify-center gap-3 rounded-xl bg-black px-6 py-4 text-white transition-transform hover:scale-105 hover:bg-gray-900">
-                <Apple className="h-6 w-6" />
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="text-base font-semibold">App Store</div>
-                </div>
-              </button>
-
-              <button className="inline-flex items-center justify-center gap-3 rounded-xl bg-white px-6 py-4 text-black transition-transform hover:scale-105 hover:bg-gray-100">
-                <Smartphone className="h-6 w-6" />
-                <div className="text-left">
-                  <div className="text-xs">Get it on</div>
-                  <div className="text-base font-semibold">Google Play</div>
-                </div>
-              </button>
-            </div>
+            {/* App Link Info */}
+            <p className="text-xl font-medium text-white italic">
+              All our apps are available via Web App, Google Play Store, and App Store.
+            </p>
 
             {/* Rating */}
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center lg:justify-start">

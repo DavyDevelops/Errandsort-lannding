@@ -1,6 +1,5 @@
-import { Apple, Smartphone } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
-import heroImage from '@/assets/images/hero-delivery.png';
+import heroImage from '@/assets/images/hero-delivery.jpg';
 
 export function Hero() {
   return (
@@ -26,22 +25,16 @@ export function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <button className="inline-flex items-center justify-center gap-3 rounded-xl bg-black px-6 py-4 text-white transition-transform hover:scale-105 hover:bg-gray-900">
-                <Apple className="h-6 w-6" />
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="text-base font-semibold">App Store</div>
-                </div>
-              </button>
-
-              <button className="inline-flex items-center justify-center gap-3 rounded-xl bg-black px-6 py-4 text-white transition-transform hover:scale-105 hover:bg-gray-900">
-                <Smartphone className="h-6 w-6" />
-                <div className="text-left">
-                  <div className="text-xs">Get it on</div>
-                  <div className="text-base font-semibold">Google Play</div>
-                </div>
-              </button>
+            <div className="flex flex-col gap-4 sm:flex-row items-center">
+              <a
+                href="https://errandsortpadi.errandsort.com/"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-500 px-8 py-4 font-bold text-white transition-transform hover:scale-105 hover:bg-emerald-600 shadow-lg shadow-emerald-200"
+              >
+                Get Started
+              </a>
+              <p className="text-sm font-medium text-gray-500 max-w-xs text-center sm:text-left">
+                All our apps are available via <span className="text-emerald-600">Web App</span>, <span className="text-emerald-600">Google Play Store</span>, and <span className="text-emerald-600">App Store</span>.
+              </p>
             </div>
 
             {/* Stats */}
@@ -66,7 +59,7 @@ export function Hero() {
             <div className="relative aspect-square overflow-hidden rounded-3xl">
               <ImageWithFallback
                 src={heroImage}
-                alt="Happy customer using errandfront"
+                alt="Happy customer receiving delivery in Nigeria"
                 className="h-full w-full object-cover"
               />
             </div>
