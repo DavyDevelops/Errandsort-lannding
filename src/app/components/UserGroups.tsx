@@ -1,8 +1,16 @@
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
-import { Apple, Smartphone, Globe, Star, Truck, ShoppingBag, Store } from 'lucide-react';
-import customerImage from '@/assets/images/customer-lifestyle.jpg';
-import vendorImage from '@/assets/images/vendor-kitchen.jpg';
-import courierImage from '@/assets/images/courier-rider.jpg';
+import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
+import {
+  Apple,
+  Smartphone,
+  Globe,
+  Star,
+  Truck,
+  ShoppingBag,
+  Store,
+} from "lucide-react";
+import customerImage from "@/assets/images/customer-lifestyle.jpg";
+import vendorImage from "@/assets/images/vendor-kitchen.jpg";
+import courierImage from "@/assets/images/courier-rider.jpg";
 
 export function UserGroups() {
   return (
@@ -13,7 +21,8 @@ export function UserGroups() {
             Join our community
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Whether you're shopping, selling, or delivering - ErrandSort connects you to the best opportunities in Nigeria.
+            Whether you're shopping, selling, or delivering - ErrandSort
+            connects you to the best opportunities in Nigeria.
           </p>
         </div>
 
@@ -31,30 +40,58 @@ export function UserGroups() {
                 </h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Browse thousands of products, track deliveries in real-time, and enjoy exclusive deals from local vendors. Everything you need, delivered to your doorstep.
+                Browse thousands of products, track deliveries in real-time, and
+                enjoy exclusive deals from local vendors. Everything you need,
+                delivered to your doorstep.
               </p>
 
               <div className="space-y-6">
                 <div className="flex flex-wrap gap-4">
-                  <a href="https://errandsortpadi.errandsort.com/" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white transition-all hover:bg-blue-700 hover:scale-105 shadow-lg shadow-blue-200">
+                  <a
+                    href="https://errandsortpadi.errandsort.com/"
+                    className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white transition-all hover:bg-blue-700 hover:scale-105 shadow-lg shadow-blue-200"
+                  >
                     <Globe className="h-5 w-5" />
                     <span className="font-bold">Access Web App</span>
                   </a>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  <a href="#" aria-disabled="true" onClick={(e) => e.preventDefault()} className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-5 py-2.5 text-white opacity-70 cursor-not-allowed shadow-md">
+                  <a
+                    href="#"
+                    aria-disabled="true"
+                    onClick={(e) => e.preventDefault()}
+                    className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-5 py-2.5 text-white opacity-70 cursor-not-allowed shadow-md"
+                  >
                     <Smartphone className="h-5 w-5" />
                     <div className="text-left">
-                      <div className="text-[10px] uppercase leading-none opacity-70">Get it on</div>
-                      <div className="text-xs font-bold leading-none">Google Play (Coming Soon)</div>
+                      <div className="text-[10px] uppercase leading-none opacity-70">
+                        Get it on
+                      </div>
+                      <div className="text-xs font-bold leading-none">
+                        Google Play (Coming Soon)
+                      </div>
                     </div>
                   </a>
-                  <a href="#" className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-5 py-2.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-md">
-                    <Apple className="h-5 w-5" />
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-5 py-2.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-md"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                      className="h-6 w-6"
+                      fill="#ffffff"
+                    >
+                      <path d="M318.7 268.6c-1.1-37.3 16.5-64.4 51.1-84.7-19.1-27.9-47.8-43.8-85.3-47.8-35.9-3.7-74.4 21.4-88.2 21.4-14.5 0-49.2-20.5-74.1-20.5-56.7 0-116.4 44.6-116.4 129.1 0 50.6 19.3 104.6 43.1 139.1 20.2 29.4 44.3 62.5 76.8 61 30.3-1.3 41.8-19.7 78.2-19.7 36.1 0 46.4 19.7 78.2 19.1 32.8-.6 54.3-29.8 74.3-59.4 12.8-18.6 17.9-28.2 28.1-49.2-73.8-28.1-69.9-136.5-8.7-163.5zm-57.8-204.6c26.9-32.5 24-61.9 23.4-64.6-22.6 1.3-49 15.2-64.3 34.9-17.4 21.3-27.5 47.8-25.3 64.6 24.1 1.9 48.4-11.9 66.2-34.9z" />
+                    </svg>
                     <div className="text-left">
-                      <div className="text-[10px] uppercase leading-none opacity-70">Download on</div>
-                      <div className="text-xs font-bold leading-none">App Store</div>
+                      <div className="text-[10px] uppercase leading-none opacity-70">
+                        Download on
+                      </div>
+                      <div className="text-xs font-bold leading-none">
+                        App Store
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -62,9 +99,13 @@ export function UserGroups() {
 
               <div className="flex items-center gap-2 pt-2 border-t border-gray-50 max-w-xs">
                 <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current" />
+                  ))}
                 </div>
-                <span className="text-sm font-semibold text-gray-700">"Trusted by 50,000+ Nigerians"</span>
+                <span className="text-sm font-semibold text-gray-700">
+                  "Trusted by 50,000+ Nigerians"
+                </span>
               </div>
             </div>
 
@@ -82,8 +123,12 @@ export function UserGroups() {
           {/* Vendors & Service Providers Section */}
           <div className="space-y-12">
             <div className="text-center space-y-4">
-              <h3 className="text-3xl font-bold text-gray-900">Grow Your Online Presence</h3>
-              <p className="text-gray-600 max-w-2xl mx-auto italic">One powerful hub for businesses and professionals in Nigeria.</p>
+              <h3 className="text-3xl font-bold text-gray-900">
+                Grow Your Online Presence
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto italic">
+                One powerful hub for businesses and professionals in Nigeria.
+              </p>
             </div>
 
             <div className="grid gap-8 lg:grid-cols-2">
@@ -93,19 +138,29 @@ export function UserGroups() {
                   <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600 mb-2 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
                     <Store className="h-7 w-7" />
                   </div>
-                  <h4 className="text-3xl font-bold text-gray-900">For Vendors</h4>
+                  <h4 className="text-3xl font-bold text-gray-900">
+                    For Vendors
+                  </h4>
                   <p className="text-gray-600 leading-relaxed text-lg">
-                    Reach more customers, manage inventory effortlessly, and boost sales with our powerful vendor dashboard. Perfect for local shops and online sellers.
+                    Reach more customers, manage inventory effortlessly, and
+                    boost sales with our powerful vendor dashboard. Perfect for
+                    local shops and online sellers.
                   </p>
                 </div>
 
                 <div className="space-y-6 pt-4 border-t border-emerald-100/30">
-                  <a href="https://errandsorthub.errandsort.com/" className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all underline decoration-2 underline-offset-4">
+                  <a
+                    href="https://errandsorthub.errandsort.com/"
+                    className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all underline decoration-2 underline-offset-4"
+                  >
                     Access Vendor Portal <span className="text-xl">→</span>
                   </a>
 
                   <div className="flex flex-wrap gap-3">
-                    <a href="#" className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-4 py-2 text-white hover:bg-gray-800 transition-colors shadow-md">
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-4 py-2 text-white hover:bg-gray-800 transition-colors shadow-md"
+                    >
                       <Smartphone className="h-4 w-4" />
                       <span className="text-xs font-bold">Google Play</span>
                     </a>
@@ -113,8 +168,12 @@ export function UserGroups() {
                 </div>
 
                 <div className="flex items-center gap-1 text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-3 w-3 fill-current" />)}
-                  <span className="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100/50 px-2 py-1 rounded-full uppercase tracking-wider">Top Rated Platform</span>
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-current" />
+                  ))}
+                  <span className="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100/50 px-2 py-1 rounded-full uppercase tracking-wider">
+                    Top Rated Platform
+                  </span>
                 </div>
               </div>
 
@@ -124,19 +183,29 @@ export function UserGroups() {
                   <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600 mb-2 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
                     <Truck className="h-7 w-7" />
                   </div>
-                  <h4 className="text-3xl font-bold text-gray-900">For Service Providers</h4>
+                  <h4 className="text-3xl font-bold text-gray-900">
+                    For Service Providers
+                  </h4>
                   <p className="text-gray-600 leading-relaxed text-lg">
-                    Offer professional services like plumbing, electrical work, or cleaning. Set your own schedule and maximize your earnings with flexible opportunities.
+                    Offer professional services like plumbing, electrical work,
+                    or cleaning. Set your own schedule and maximize your
+                    earnings with flexible opportunities.
                   </p>
                 </div>
 
                 <div className="space-y-6 pt-4 border-t border-emerald-100/30">
-                  <a href="https://errandsorthub.errandsort.com/" className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all underline decoration-2 underline-offset-4">
+                  <a
+                    href="https://errandsorthub.errandsort.com/"
+                    className="inline-flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all underline decoration-2 underline-offset-4"
+                  >
                     Access Provider Hub <span className="text-xl">→</span>
                   </a>
 
                   <div className="flex flex-wrap gap-3">
-                    <a href="#" className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-4 py-2 text-white hover:bg-gray-800 transition-colors shadow-md">
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 rounded-xl bg-gray-900 px-4 py-2 text-white hover:bg-gray-800 transition-colors shadow-md"
+                    >
                       <Smartphone className="h-4 w-4" />
                       <span className="text-xs font-bold">Google Play</span>
                     </a>
@@ -144,8 +213,12 @@ export function UserGroups() {
                 </div>
 
                 <div className="flex items-center gap-1 text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-3 w-3 fill-current" />)}
-                  <span className="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100/50 px-2 py-1 rounded-full uppercase tracking-wider">Elite Professionals</span>
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-current" />
+                  ))}
+                  <span className="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100/50 px-2 py-1 rounded-full uppercase tracking-wider">
+                    Elite Professionals
+                  </span>
                 </div>
               </div>
             </div>
@@ -164,31 +237,58 @@ export function UserGroups() {
                 </h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Join our fleet of professional riders and earn money by delivering orders across your city. You are the backbone of our delivery network. Fast payouts and flexible hours.
+                Join our fleet of professional riders and earn money by
+                delivering orders across your city. You are the backbone of our
+                delivery network. Fast payouts and flexible hours.
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <a href="#" className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-6 py-3.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-xl">
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-6 py-3.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-xl"
+                >
                   <Smartphone className="h-6 w-6" />
                   <div className="text-left">
-                    <div className="text-[10px] uppercase leading-none opacity-70">Get it on</div>
-                    <div className="text-sm font-bold leading-none mt-1">Google Play</div>
+                    <div className="text-[10px] uppercase leading-none opacity-70">
+                      Get it on
+                    </div>
+                    <div className="text-sm font-bold leading-none mt-1">
+                      Google Play
+                    </div>
                   </div>
                 </a>
-                <a href="#" className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-6 py-3.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-xl">
-                  <Apple className="h-6 w-6" />
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-3 rounded-xl bg-gray-900 px-6 py-3.5 text-white transition-all hover:bg-gray-800 hover:scale-105 shadow-xl"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    className="h-6 w-6"
+                    fill="#ffffff"
+                  >
+                    <path d="M318.7 268.6c-1.1-37.3 16.5-64.4 51.1-84.7-19.1-27.9-47.8-43.8-85.3-47.8-35.9-3.7-74.4 21.4-88.2 21.4-14.5 0-49.2-20.5-74.1-20.5-56.7 0-116.4 44.6-116.4 129.1 0 50.6 19.3 104.6 43.1 139.1 20.2 29.4 44.3 62.5 76.8 61 30.3-1.3 41.8-19.7 78.2-19.7 36.1 0 46.4 19.7 78.2 19.1 32.8-.6 54.3-29.8 74.3-59.4 12.8-18.6 17.9-28.2 28.1-49.2-73.8-28.1-69.9-136.5-8.7-163.5zm-57.8-204.6c26.9-32.5 24-61.9 23.4-64.6-22.6 1.3-49 15.2-64.3 34.9-17.4 21.3-27.5 47.8-25.3 64.6 24.1 1.9 48.4-11.9 66.2-34.9z" />
+                  </svg>
                   <div className="text-left">
-                    <div className="text-[10px] uppercase leading-none opacity-70">Download on</div>
-                    <div className="text-sm font-bold leading-none mt-1">App Store</div>
+                    <div className="text-[10px] uppercase leading-none opacity-70">
+                      Download on
+                    </div>
+                    <div className="text-sm font-bold leading-none mt-1">
+                      App Store
+                    </div>
                   </div>
                 </a>
               </div>
 
               <div className="flex items-center gap-2 pt-2">
                 <div className="flex text-yellow-500">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current" />
+                  ))}
                 </div>
-                <span className="text-sm font-bold text-gray-800 italic">"Highly rated delivery network in Nigeria"</span>
+                <span className="text-sm font-bold text-gray-800 italic">
+                  "Highly rated delivery network in Nigeria"
+                </span>
               </div>
             </div>
 
@@ -202,8 +302,12 @@ export function UserGroups() {
 
                 {/* Floating Stats */}
                 <div className="absolute top-8 -right-4 rounded-2xl bg-white p-4 shadow-xl border border-gray-100 animate-bounce-subtle">
-                  <div className="text-xs text-gray-500 font-bold uppercase tracking-wider">Weekly Earnings</div>
-                  <div className="text-lg font-bold text-emerald-600">Up to ₦50k+</div>
+                  <div className="text-xs text-gray-500 font-bold uppercase tracking-wider">
+                    Weekly Earnings
+                  </div>
+                  <div className="text-lg font-bold text-emerald-600">
+                    Up to ₦50k+
+                  </div>
                 </div>
               </div>
             </div>
